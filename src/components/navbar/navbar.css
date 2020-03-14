@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav > a{
+    margin: 0 25px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.accountpill{
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    /* height: 30px; */
+}

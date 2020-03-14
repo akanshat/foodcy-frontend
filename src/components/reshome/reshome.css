@@ -1,0 +1,80 @@
+.reshome{
+    width: 90%;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resnamediv{
+    background-image: url("../../assets/resbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.resnamediv > div{
+    width: 90%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.namespan{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.ratingspan{
+    background-color: tomato;
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.ratingspan > img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.part2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menudiv{
+    width: 60%;
+    color: tomato;
+}
+
+h1{
+    font-weight: 600;
+    color: black;
+}
+
+.menuitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
