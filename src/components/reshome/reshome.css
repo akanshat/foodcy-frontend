@@ -60,21 +60,109 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-
+    margin-top: 60px;
 }
 
 .menudiv{
-    width: 60%;
-    color: tomato;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 40px;
 }
 
-h1{
-    font-weight: 600;
+.part2  h1{
+    font-weight: 500;
+    margin-top: 0px;
     color: black;
+    font-size: 1.5em;
+    text-align: left;
+    
 }
 
 .menuitem{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #272626;
+    /* border-bottom: solid 1px #696969; */
 }
+
+.dishname {
+    text-transform: capitalize;
+    font-weight: 500;
+    /* letter-spacing: 0.07em; */
+    line-height: 2em;
+}
+.mapdiv{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 40px;
+}
+
+.mapdiv > iframe{
+    height: 30vh;
+    width: 20vw;
+    border: solid 2px #696969;
+    border-radius: 15px;
+}
+
+.reviewdiv{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+.reviewdiv h1{
+    font-weight: 500;
+    width: 80%;
+    margin: 0;
+    margin-top: 50px;
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+}
+.reviewcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.reviewuserdiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.reviewContent{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.reviewrating{
+    color: white;
+    /* border: 2px solid tomato; */
+    background-color: #696969;
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.reviewrating > img {
+    height: 18px;
+    margin-right: 5px;
+}
+
