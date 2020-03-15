@@ -1,0 +1,31 @@
+.reviewoverlay{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.reviewCont{
+    padding: 55px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rate, .review-content{
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+}
+
+.rate{
+    background: white;
+}

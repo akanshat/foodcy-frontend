@@ -7,7 +7,7 @@
     background-color: white;
 }
 
-.nav > a{
+.nav > a, nav button{
     margin: 0 25px;
 }
 
@@ -23,5 +23,6 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1em;
+    border: none;
     /* height: 30px; */
 }

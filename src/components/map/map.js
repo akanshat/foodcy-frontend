@@ -5,9 +5,9 @@ const Map = ({lat, long}) => {
     return (
         <iframe 
             title="map"
-            frameborder="0"
+            frameBorder="0"
             src={`https://www.google.com/maps/embed/v1/view?key=${apikey}&center=${lat},${long}&zoom=19`}
-            allowfullscreen >
+            allowFullScreen >
         </iframe >
     );
 }
