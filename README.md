@@ -1,5 +1,4 @@
-# Foodcy- Find Restaurants
-## Frontend
+# Foodcy-Frontend
 
 This is the front-end for an app to find restaurants. It is written using ReactJs. It utilizes react-hooks, react context api, and functional components.
 
