@@ -1,186 +1,188 @@
-.reshome{
-    width: 90%;
-    margin: 25px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reshome {
+  width: 90%;
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/bg.png");
 }
 
-.resnamediv{
-    background-image: url("../../assets/resbg.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    width: 100%;
-    border-radius: 25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.resnamediv {
+  background-image: url("../../assets/resbg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.resnamediv > div{
-    width: 90%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.resnamediv > div {
+  width: 90%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.part1{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.part1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-.namespan{
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 1.5em;
+.namespan {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
-.ratingspan{
-    background-color: tomato;
-    height: 40px;
-    width: 80px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.2em;
+.ratingspan {
+  background-color: tomato;
+  height: 40px;
+  width: 80px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 .ratingspan > img {
-    height: 25px;
-    margin-right: 5px;
+  height: 20px;
+  margin-right: 5px;
 }
 
-.part2{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+.part2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
-.menudiv{
-    background-color: white;
-    width: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 40px;
+.menudiv {
+  background-color: white;
+  width: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 40px;
+  border-radius: 15px;
 }
 
-.part2  h1{
-    font-weight: 500;
-    margin-top: 0px;
-    color: black;
-    font-size: 1.5em;
-    text-align: left;
-    
+.part2 h1 {
+  font-weight: 500;
+  margin-top: 0px;
+  color: black;
+  font-size: 1.5em;
+  text-align: left;
 }
 
-.menuitem{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #272626;
-    /* border-bottom: solid 1px #696969; */
+.menuitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #272626;
+  /* border-bottom: solid 1px #696969; */
 }
 
 .dishname {
-    text-transform: capitalize;
-    font-weight: 500;
-    /* letter-spacing: 0.07em; */
-    line-height: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  /* letter-spacing: 0.07em; */
+  line-height: 2em;
 }
-.mapdiv{
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 40px;
-}
-
-.mapdiv > iframe{
-    height: 30vh;
-    width: 20vw;
-    border: solid 2px #696969;
-    border-radius: 15px;
+.mapdiv {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 40px;
+  border-radius: 15px;
 }
 
-.reviewdiv{
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin-top: 40px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 25px;
-
-}
-.reviewdiv h1{
-    font-weight: 500;
-    /* width: 60%; */
-    margin: 0;
-    margin-top: 50px;
-    color: black;
-    font-size: 1.5em;
-    text-align: left;
-}
-.reviewcontainer{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 25px;
+.mapdiv > iframe {
+  height: 30vh;
+  width: 20vw;
+  border: solid 2px #696969;
+  border-radius: 15px;
 }
 
-.reviewuserdiv{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    text-transform: capitalize;
-    font-weight: 500;
+.reviewdiv {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.reviewdiv h1 {
+  font-weight: 500;
+  /* width: 60%; */
+  margin: 0;
+  margin-top: 50px;
+  color: black;
+  font-size: 1.5em;
+  text-align: left;
+}
+.reviewcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 25px;
 }
 
-.reviewsection{
-    display: flex;
-    justify-content: space-between ;
-    width: 90%;
-    align-items: center;
-}
-.reviewbtn{
-    /* width: 60px; */
-    height: 30px;
-    background: tomato;
-    color: white;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0 15px;
-    border-radius: 15px;
+.reviewuserdiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
-.reviewContent{
-    text-align: left;
-    margin-top: 10px;
-    font-weight: 300;
+.reviewsection {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+.reviewbtn {
+  /* width: 60px; */
+  height: 30px;
+  background: tomato;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 15px;
+  border-radius: 15px;
+  outline: none;
 }
 
-.reviewrating{
-    color: white;
-    /* border: 2px solid tomato; */
-    background-color: #696969;
-    height: 30px;
-    width: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 0.9em;
+.reviewContent {
+  text-align: left;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.reviewrating {
+  color: white;
+  /* border: 2px solid tomato; */
+  background-color: #696969;
+  height: 30px;
+  width: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9em;
 }
 
 .reviewrating > img {
-    height: 18px;
-    margin-right: 5px;
+  height: 18px;
+  margin-right: 5px;
 }
-

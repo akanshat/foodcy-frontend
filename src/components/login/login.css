@@ -38,3 +38,8 @@
     font-weight: 700;
     border-radius: 5px;
 }
+
+.errormsg{
+    color: rgb(228, 67, 67);
+    margin: 8px;
+}

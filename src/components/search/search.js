@@ -9,8 +9,6 @@ const Search = ({ query, setQuery }) => {
                 name="query" value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Type to search..." />
-                
-            <button className="searchButton" type="submit">Search</button>
         </div>
     );
 

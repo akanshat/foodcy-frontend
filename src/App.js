@@ -1,13 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Login from './components/login/login';
-import Register from './components/register/register';
-import Navbar from './components/navbar/navbar';
-import Dashboard from './components/dashboard/dashboard';
-import ResHome from './components/reshome/reshome';
-import { AuthContext } from './contexts/auth';
-import config from './config';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import HomePage from "./components/landing-page/landing-page";
+import Login from "./components/login/login";
+import Register from "./components/register/register";
+import Navbar from "./components/navbar/navbar";
+import Dashboard from "./components/dashboard/dashboard";
+import ResHome from "./components/reshome/reshome";
+import { AuthContext } from "./contexts/auth";
+import config from "./config";
+import "./App.css";
 
 function App() {
   const [token, setToken] = useState(); // const isLoggedIn = false
@@ -18,40 +24,39 @@ function App() {
       const { backendURL } = config;
       fetch(`${backendURL}/api/user`, {
         headers: {
-          'authorization': token
-        }
+          authorization: token,
+        },
       })
-        .then(res => res.json())
-        .then(res => setUser(res.user));
+        .then((res) => res.json())
+        .then((res) => setUser(res.user));
     }
-  }, [token])
+  }, [token]);
 
-  useEffect(()=>{
-    if(!token){
-        const tk = localStorage.getItem("token");
-        if(tk){
-          setToken(tk);
-        }
-
+  useEffect(() => {
+    if (!token) {
+      const tk = localStorage.getItem("token");
+      if (tk) {
+        setToken(tk);
+      }
     }
-  }, [token])
+  }, [token]);
 
   const logMeOut = () => {
     localStorage.setItem("token", "");
     setToken("");
-  }
+  };
 
   return (
-
     <AuthContext.Provider value={{ token, setToken, logMeOut, user }}>
       <Router>
-
-
         <div className="App">
           <Navbar name={user?.name} />
           <Switch>
+            <Route exact path="/homepage">
+              <HomePage />
+            </Route>
             <Route exact path="/">
-              <Redirect to="/login" />
+              <Redirect to="/homepage" />
             </Route>
             <Route exact path="/login">
               <Login />
@@ -60,10 +65,10 @@ function App() {
               <Register />
             </Route>
             <Route exact path="/dashboard">
-              {token ? <Dashboard /> : <Redirect to="/login"/>}
+              {token ? <Dashboard /> : <Redirect to="/login" />}
             </Route>
             <Route exact path="/restaurant/:id">
-              {token ? <ResHome /> : <Redirect to="/login"/>}
+              {token ? <ResHome /> : <Redirect to="/login" />}
             </Route>
             <Route path="*">
               <h1>404</h1>

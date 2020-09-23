@@ -12,10 +12,13 @@
 }
 
 .logo {
-    height: 35px;
+    height: 40px;
+    margin-left: 7%;
 }
 
 .accountpill{
+    margin-right: 3%;
+    height: 30px;
     background-color: tomato;
     border-radius: 20px;
     padding: 5px 15px;

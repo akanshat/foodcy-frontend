@@ -1,5 +1,5 @@
 .App {
-  background-image: url("./assets/bg.png");
+  background-size: cover;
   text-align: center;
   display: flex;
   width: 100vw;

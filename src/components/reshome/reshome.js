@@ -86,7 +86,7 @@ const ResHome = () => {
 
         <>
             <AddReview isOpen={isOpen} setIsOpen={setIsOpen} id={id} token={token} modifyReviews={modifyReviews}/>
-            <div className="reshome">
+            <div className="reshome"  >
                 <div className="resnamediv">
                     <div>
                         <div className="part1">
@@ -105,7 +105,7 @@ const ResHome = () => {
                     </div>
                 </div>
 
-                <div className="part2">
+                <div className="part2" >
                     <div className="menudiv">
                         <h1>Menu</h1>
                         {menu.map(item => <MenuItem item={item} key={item.dishname} />)}

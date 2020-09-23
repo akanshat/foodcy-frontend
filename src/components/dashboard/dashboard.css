@@ -1,6 +1,10 @@
-.cards{
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.dashboard-container {
+  background-image: url("../../assets/bg.png");
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
