@@ -10,7 +10,7 @@ const Navbar = ({ name }) => {
 
     return (
         <nav className="nav">
-            <Link to='/dashboard'>
+            <Link to={token?'/dashboard':'/homepage'}>
                 <img className="logo" src={logo} alt='img' />
             </Link>
             {token ?

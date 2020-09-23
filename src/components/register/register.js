@@ -9,11 +9,15 @@ const Register = () => {
     const [inputs, setInputs] = useState({ name: "", email: "", password: "" });
     const [loading, setLoading] = useState();
     const [message, setMessage] = useState();
-
+    const [errmsg, setErrmsg] = useState("");
     const { backendURL } = config;
 
     const handleSubmit = async () => {
         setLoading(true);
+        if(inputs.email === "" || inputs.password === "" || inputs.name === "") {
+            setLoading(false);
+            setErrmsg("Details are invalid, try again")
+        }
         const { message: msg } = await fetch(`${backendURL}/api/register`, {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
@@ -53,6 +57,7 @@ const Register = () => {
 
                         <button className="submit" type="submit" onClick={handleSubmit}>register</button>
                         <p>Already have an account? <Link to='/login'>Login</Link></p>
+                        {errmsg ? <p className='errormsg' >{errmsg}</p> : <></>}
                     </>
                 }
             </div>

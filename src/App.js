@@ -65,10 +65,10 @@ function App() {
               <Register />
             </Route>
             <Route exact path="/dashboard">
-              {token ? <Dashboard /> : <Redirect to="/login" />}
+              {token ? <Dashboard /> : <Redirect to="/" />}
             </Route>
             <Route exact path="/restaurant/:id">
-              {token ? <ResHome /> : <Redirect to="/login" />}
+              {token ? <ResHome /> : <Redirect to="/" />}
             </Route>
             <Route path="*">
               <h1>404</h1>

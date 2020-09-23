@@ -1,5 +1,25 @@
 .homepage-container{
-    width: 100%;
     background-image: url('../../assets/homebg.jpeg');
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.homepage-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: flex-start;
+    padding: 2%;
+}
+
+.homepage-heading{
+    margin-top: 3vh;
+    font-size: 5rem;
+}
+
+.homepage-text{
+    font-size: 2rem;
 }

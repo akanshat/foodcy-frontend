@@ -23,15 +23,17 @@
 }
 
 .text-input{
-    border: 2px solid black;
+    outline: none;
+    border-top: 1px solid black;
     border-radius: 5px;
     padding: 11px 25px;
     margin-bottom: 25px;
 }
 
 .submit{
+    outline: none;
     background-color: white ;
-    border: 2px solid black;
+    border-top: 1px solid black;
     padding: 11px 25px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -42,4 +44,15 @@
 .errormsg{
     color: rgb(228, 67, 67);
     margin: 8px;
+}
+
+.cancel-button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #8f8b8b;
+    margin-left: 110%;
+    margin-top: -18%;
+    cursor: pointer;
 }
