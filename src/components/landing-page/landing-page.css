@@ -1,25 +1,90 @@
-.homepage-container{
-    background-image: url('../../assets/homebg.jpeg');
-    width: 100vw;
-    height: 92.5vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.homepage-container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.homepage-text{
+.homepage-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: flex-start;
+  padding: 2%;
+}
+
+.homepage-heading {
+  margin-top: 3vh;
+  font-size: 5rem;
+}
+
+.homepage-text {
+  font-size: 2rem;
+}
+
+.left-home {
+  width: 60vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-home {
+  width: 40vw;
+  height: 100vh;
+  align-content: flex-end;
+}
+
+.home-logo:hover {
+  cursor: pointer;
+}
+
+.form-container{
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
-    align-items: flex-start;
-    padding: 2%;
+    align-items: center;
 }
 
-.homepage-heading{
-    margin-top: 3vh;
-    font-size: 5rem;
+.right-image{
+    align-self: flex-end;
+    width: 40vw;
+    height: 100vh;
 }
 
-.homepage-text{
-    font-size: 2rem;
+.text-input{
+    width: 20vw;
+    height: 4vh;
+    margin: 10px;
+    border: 1px solid rgb(28, 182, 28);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    outline: 1px solid rgb(28, 182, 28);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.text-input::placeholder{
+    color: rgb(28, 182, 28);
+    font-weight: 300;
+}
+
+.login-submit{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: tomato;
+    width: 6vw;
+    height: 4vh;
+    font-size: 1.8vh;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 0.09em;
 }
