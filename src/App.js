@@ -50,25 +50,36 @@ function App() {
     <AuthContext.Provider value={{ token, setToken, logMeOut, user }}>
       <Router>
         <div className="App">
-          <Navbar name={user?.name} />
           <Switch>
-            <Route exact path="/homepage">
+            <Route exact path="/">
               <HomePage />
             </Route>
-            <Route exact path="/">
-              <Redirect to="/homepage" />
-            </Route>
             <Route exact path="/login">
+              <Navbar name={user?.name} />
               <Login />
             </Route>
             <Route exact path="/register">
               <Register />
             </Route>
             <Route exact path="/dashboard">
-              {token ? <Dashboard /> : <Redirect to="/" />}
+              {token ? (
+                <>
+                  <Navbar name={user?.name} />
+                  <Dashboard />
+                </>
+              ) : (
+                <Redirect to="/" />
+              )}
             </Route>
             <Route exact path="/restaurant/:id">
-              {token ? <ResHome /> : <Redirect to="/" />}
+              {token ? (
+                <>
+                  <Navbar name={user?.name} />
+                  <ResHome />
+                </>
+              ) : (
+                <Redirect to="/" />
+              )}
             </Route>
             <Route path="*">
               <h1>404</h1>

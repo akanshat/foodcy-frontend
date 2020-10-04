@@ -62,6 +62,7 @@ const HomePage = () => {
                 placeholder="Email"
                 value={inputs.email}
                 onChange={handleInput}
+                required
               />
 
               <input
@@ -71,6 +72,7 @@ const HomePage = () => {
                 placeholder="Password"
                 value={inputs.password}
                 onChange={handleInput}
+                required
               />
 
               <button
@@ -80,9 +82,11 @@ const HomePage = () => {
               >
                 LOGIN
               </button>
-              <p>
-                Don't have an account yet? <Link to="/register">Register</Link>
-              </p>
+              <p className="register-text">Don't have an account yet?</p>
+              <Link className="register-link" to="/register">
+                Register
+              </Link>
+
               {errmsg ? <p className="errormsg">{errmsg}</p> : <></>}
             </>
           )}

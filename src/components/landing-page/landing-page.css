@@ -45,46 +45,84 @@
   cursor: pointer;
 }
 
-.form-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.right-image{
-    align-self: flex-end;
-    width: 40vw;
-    height: 100vh;
+.right-image {
+  align-self: flex-end;
+  width: 40vw;
+  height: 100vh;
 }
 
-.text-input{
-    width: 20vw;
-    height: 4vh;
-    margin: 10px;
-    border: 1px solid rgb(28, 182, 28);
-    text-align: center;
-    color: rgb(0, 0, 0);
-    outline: 1px solid rgb(28, 182, 28);
-    font-weight: 900;
-    font-size: 15px;
+.text-input {
+  width: 20vw;
+  height: 4vh;
+  margin: 10px;
+  border: 1px solid rgb(28, 182, 28);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  outline: 1px solid rgb(28, 182, 28);
+  font-weight: 900;
+  font-size: 15px;
 }
 
-.text-input::placeholder{
-    color: rgb(28, 182, 28);
-    font-weight: 300;
+.text-input::placeholder {
+  color: rgb(28, 182, 28);
+  font-weight: 300;
 }
 
-.login-submit{
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    background-color: tomato;
-    width: 6vw;
-    height: 4vh;
-    font-size: 1.8vh;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 900;
-    letter-spacing: 0.09em;
+.login-submit {
+  margin-top: 20px;
+  outline: none;
+  width: 7vw;
+  height: 4vh;
+  font-size: 1.8vh;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  background-color: rgb(255, 255, 255);
+  color: tomato;
+  border: 2px solid tomato;
+}
+
+.login-submit:hover {
+  border: none;
+  background-color: tomato;
+  color: white;
+}
+
+.register-text {
+  width: 25vw;
+  height: 1vh;
+  text-transform: uppercase;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  margin-top: 5vh;
+}
+
+.register-link:hover,
+.register-link:visited,
+.register-link:link,
+.register-link:active {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  text-transform: uppercase;
+  flex-grow: 4;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(80, 80, 80);
+}
+
+.register-link:hover {
+  color: rgb(238, 112, 90);
+  font-weight: 500;
+  border-bottom: 2px solid rgb(238, 112, 90);
+}
+
+.errormsg {
+  color: red;
+  text-transform: uppercase;
 }
