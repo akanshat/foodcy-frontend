@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import config from "../../config";
 import { useAuth } from "../../contexts/auth";
+import Loading from "../loading/loading";
 
 import "./addreview.css";
 
@@ -45,11 +46,13 @@ const AddReview = ({ isOpen, setIsOpen, id, token, modifyReviews }) => {
     <div className="reviewoverlay">
       <div className="reviewCont">
         {loading ? (
-          <h1>Loading...</h1>
+          <Loading />
         ) : (
           <>
             <span>
-              <p className="cancelx" onClick={()=> setIsOpen(false)} >&#10005;</p>
+              <p className="cancelx" onClick={() => setIsOpen(false)}>
+                &#10005;
+              </p>
               <select
                 className="rate"
                 name="rating"

@@ -3,6 +3,7 @@ import "./login.css";
 import { useAuth } from "../../contexts/auth";
 import { Link, Redirect } from "react-router-dom";
 import config from "../../config";
+import Loading from "../loading/loading";
 
 const Login = () => {
   const [inputs, setInputs] = useState({ email: "", password: "" });
@@ -27,8 +28,8 @@ const Login = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(inputs),
     }).then((response) => response.json());
-    if(!fetchToken) {
-        setErrmsg("Invalid Email or Password");
+    if (!fetchToken) {
+      setErrmsg("Invalid Email or Password");
       setLoading(false);
       return <Redirect to="/login" />;
     }
@@ -48,7 +49,7 @@ const Login = () => {
     <div className="overlay">
       <div className="form-container">
         {loading ? (
-          <h1>loading...</h1>
+          <Loading />
         ) : (
           <>
             <input
@@ -75,7 +76,7 @@ const Login = () => {
             <p>
               Don't have an account yet? <Link to="/register">Register</Link>
             </p>
-            {errmsg ? <p className='errormsg' >{errmsg}</p> : <></>}
+            {errmsg ? <p className="errormsg">{errmsg}</p> : <></>}
           </>
         )}
       </div>

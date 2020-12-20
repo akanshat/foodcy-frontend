@@ -4,6 +4,7 @@ import { useAuth } from "../../contexts/auth";
 import { Link, Redirect } from "react-router-dom";
 import config from "../../config";
 import sidebg from "../../assets/sidebg.jpg";
+import Loading from "../loading/loading";
 
 const HomePage = () => {
   const [inputs, setInputs] = useState({ email: "", password: "" });
@@ -52,7 +53,7 @@ const HomePage = () => {
       <div className="left-home">
         <div className="form-container">
           {loading ? (
-            <h1>loading...</h1>
+            <Loading />
           ) : (
             <>
               <input

@@ -4,6 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 import { useAuth } from "../../contexts/auth";
 import config from "../../config";
 import sidebg from "../../assets/sidebg.jpg";
+import Loading from "../loading/loading";
 
 const Register = () => {
   const { token } = useAuth();
@@ -44,7 +45,7 @@ const Register = () => {
       <div className="left-home">
         <div className="form-container">
           {loading ? (
-            <h1>Loading...</h1>
+            <Loading />
           ) : (
             <>
               {message && <p>{message}</p>}
