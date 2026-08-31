@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./restaurantCard.css";
 const RestaurantCard = ({ restaurant }) => {
-  const { image, name, rating, address, _id: id } = restaurant;
+  const { imageUrl, name, rating, address, _id: id } = restaurant;
   return (
     <Link to={`/restaurant/${id}`}>
       <div className="resCard">
-        <img className="resimage" alt="resimage" src={image} />
+        <img className="resimage" alt="resimage" src={imageUrl} />
         <div className="details">
           <div className="namediv">
             <span className="resName">{name}</span>

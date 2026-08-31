@@ -12,7 +12,7 @@ const MenuItem = ({ item }) => {
   return (
     <div className="menuitem">
       <span className="dishname">{item.dishname}</span>
-      <span className="dishprice">&#8377;{item.price}</span>
+      <span className="dishprice">&#8377;{item.dishprice}</span>
     </div>
   );
 };
@@ -21,14 +21,14 @@ const ReviewItem = ({ item }) => {
   return (
     <div className="reviewcontainer">
       <div className="reviewuserdiv">
-        <span className="reviewUser">{item.name}</span>
+        <span className="reviewUser">{item.author}</span>
 
         <span className="reviewrating">
           <img alt="img" src={star} />
           {item.rating}
         </span>
       </div>
-      <span className="reviewContent">{item.content}</span>
+      <span className="reviewContent">{item.comment}</span>
     </div>
   );
 };
@@ -77,6 +77,8 @@ const ResHome = () => {
     latitude,
     longitude,
   } = restaurant;
+
+  console.log(reviews)
 
   return (
     <>

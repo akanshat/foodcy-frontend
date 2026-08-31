@@ -70,7 +70,7 @@ const Login = () => {
               onChange={handleInput}
             />
 
-            <button onClick={handleSubmit} className="submit" type="submit">
+            <button onClick={handleSubmit} className="submit" type="submit" style={{ minWidth: '100px' }}>
               Login
             </button>
             <p>

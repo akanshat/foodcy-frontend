@@ -16,7 +16,9 @@ const Register = () => {
 
   const handleSubmit = async () => {
     setLoading(true);
+    console.log(inputs)
     if (inputs.email === "" || inputs.password === "" || inputs.name === "") {
+      console.log("empty field")
       setLoading(false);
       setErrmsg("Details are invalid, try again !!!");
     }
@@ -30,6 +32,7 @@ const Register = () => {
   };
 
   const handleInput = (event) => {
+    console.log(event.target.value)
     setInputs({
       ...inputs,
       [event.target.name]: event.target.value,
